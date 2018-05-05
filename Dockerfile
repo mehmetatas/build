@@ -11,7 +11,6 @@ RUN apt-get update && \
         git \
         maven \
         openjdk-8-jdk && \
-        awscli && \
     rm -rf /var/lib/apt/lists/* && \
     
     # install npm 5.6.0 and node 8.x
