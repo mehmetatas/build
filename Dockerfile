@@ -1,3 +1,4 @@
+# ubuntu 16.04 with awscli, git, node, npm, openjdk8, mvn and firefox45 installed
 FROM ubuntu:16.04
 # install dependencies
 RUN apt-get update && \
@@ -27,3 +28,5 @@ RUN apt-get update && \
 ENV DISPLAY=:99
 ENV PATH /usr/bin/firefox:$PATH
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
+WORKDIR /repo/ci
+CMD ./build.sh
