@@ -29,4 +29,4 @@ ENV DISPLAY=:99
 ENV PATH /usr/bin/firefox:$PATH
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 WORKDIR /repo/ci
-CMD ./build.sh
+CMD ./build.sh ${build_id}
